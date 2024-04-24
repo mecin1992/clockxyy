@@ -2,7 +2,7 @@
  * @Author: machao
  * @Date: 2024-04-23 11:38:25
  * @LastEditors: machao
- * @LastEditTime: 2024-04-24 11:42:44
+ * @LastEditTime: 2024-04-24 14:11:59
  * @Description: 
  * 
 -->
@@ -80,8 +80,8 @@
       align-items: center;
     }
     .book-item img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 100%;
+      max-height: 48px;
       margin-bottom: 12px;
     }
     .book-item a {
@@ -102,12 +102,13 @@
     }
     .search {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      margin-bottom: 80px;
     }
     input.bdbtn {
-      width: 65px;
-      height: 28px;
-      line-height: 28px;
+      width: 85px;
+      height: 48px;
+      line-height: 48px;
       font: 12px \5b8b\4f53;
       cursor: pointer;
       outline: none;
@@ -118,13 +119,14 @@
       background-color: #1a89ed;
     }
     input.bdtext {
-      width: 240px;
-      padding: 0 5px;
-      height: 28px;
-      line-height: 28px;
+      width: 480px;
+      padding: 12px 5px;
+      height: 36px;
+      line-height: 36px;
       border-radius: 4px;
       border: none;
       outline: none;
+      font-size: 16px;
       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -133,11 +135,12 @@
   <body style="padding: 16px">
     <div class="search">
       <form action="https://www.baidu.com/s">
-        <input type="text" name="wd" class="bdtext" /><input
-          type="submit"
-          value="百度一下"
-          class="bdbtn"
-        />
+        <input
+          type="text"
+          name="wd"
+          class="bdtext"
+          placeholder="百度一下"
+        /><input type="submit" value="百度一下" class="bdbtn" />
       </form>
     </div>
     <div id="books"></div>
